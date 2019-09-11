@@ -1,0 +1,20 @@
+body, html {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    max-width: 800px;
+    border: 2px solid crimson;
+    margin: auto;
+    text-align: center;
+}
+
+nav {
+    border: 2px solid green;
+    margin: auto;
+    text-align: center;
+}
