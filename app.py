@@ -4,12 +4,12 @@ from flask import Flask, render_template as rend
 
 app = Flask(__name__)
 
-articles = [{'id': 1, 'author': 'Guðrún', 'title': 'epic', 'content': 'LOREM IPSUM'},
-			{'id': 2, 'author': 'Arnór', 'title': 'car', 'content': 'LOREM IPSUM'},
-			{'id': 3, 'author': 'Erik', 'title': 'battle', 'content': 'LOREM IPSUM'}]
-author = ''
-title = ''
-content = ''
+lorem_ipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Nisl nunc mi ipsum faucibus vitae aliquet. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Arcu ac tortor dignissim convallis aenean et tortor. Aliquam vestibulum morbi blandit cursus risus at. Feugiat in ante metus dictum at tempor commodo ullamcorper. Magnis dis parturient montes nascetur ridiculus mus. Sed libero enim sed faucibus turpis in eu. Sed tempus urna et pharetra. Tincidunt vitae semper quis lectus nulla at. Blandit massa enim nec dui nunc mattis enim. Amet commodo nulla facilisi nullam. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. Sodales ut eu sem integer. Viverra suspendisse potenti nullam ac tortor vitae purus. Sed risus pretium quam vulputate dignissim. Lobortis feugiat vivamus at augue eget arcu dictum. Pellentesque sit amet porttitor eget.'
+
+articles = [{'id': 1, 'author': 'Guðrún', 'title': 'epic', 'content': lorem_ipsum},
+			{'id': 2, 'author': 'Arnór', 'title': 'car', 'content': lorem_ipsum},
+			{'id': 3, 'author': 'Erik', 'title': 'battle', 'content': lorem_ipsum}]
+author, title, content = '', '', ''
 
 @app.route('/')
 def index():

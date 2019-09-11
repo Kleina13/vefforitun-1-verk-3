@@ -5,3 +5,10 @@ body, html {
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.epic {
+    max-width: 500px;
+    background-color: red;
+    margin: auto;
+    text-align: center;
+}
