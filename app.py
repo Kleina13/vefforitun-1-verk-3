@@ -8,13 +8,15 @@ lorem_ipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
 
 articles = [{'id': 1, 'author': "Noami Winters", 'title': "Rat poison in school's caffettiera food", 'content': lorem_ipsum},
 			{'id': 2, 'author': "Sebastian Sanchez", 'title': "Video games bad!", 'content': lorem_ipsum},
-			{'id': 3, 'author': "Samuel Jackson", 'title': "Donald Trump commits genocide", 'content': lorem_ipsum}]
+			{'id': 3, 'author': "Carl Bowie", 'title': "Florida man steals baby to get free meth", 'content': lorem_ipsum},
+			{'id': 4, 'author': "Rachel Kristen", 'title': "Football team discovers fire", 'content': lorem_ipsum},
+			{'id': 5, 'author': "Samuel Jackson", 'title': "Donald Trump commits genocide", 'content': lorem_ipsum}]
 author, title, content = '', '', ''
 lenA = len(articles)
 
 @app.route('/')
 def index():
-	return rend('layout.html')
+	return '<h1>Þessi síða er ókláruð</h1><a href="/article/1">Ýttu hérnar fyrir síðuna</a>'
 
 @app.route('/article/<ID>')
 def article(ID):

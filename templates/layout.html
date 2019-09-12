@@ -9,15 +9,20 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        {% for i in range(len) %} 
-            <a href="/article/{{ articles[i]['id'] }}">{{ articles[i]['title'] }}</a> <br>
-        {% endfor %} 
-    </nav>
-    <article>
-        <h1>{{ title }}</h1>
-        <h4>{{ author }}</h4>
-        <p>{{ content }}</p>
-    </article>
+    <header>
+        <img src="{{ url_for('static', filename='img/mdl_logo.png') }}" alt="MDL" width="150px" height="auto">
+    </header>
+    <div>
+        <nav>
+            {% for i in range(len) %} 
+                <a href="/article/{{ articles[i]['id'] }}">{{ articles[i]['title'] }}</a> <br>
+            {% endfor %} 
+        </nav>
+        <article>
+            <h1>{{ title }}</h1>
+            <h4>{{ author }}</h4>
+            <p>{{ content }}</p>
+        </article>
+    </div>
 </body>
 </html>
