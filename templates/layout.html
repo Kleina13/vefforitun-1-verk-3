@@ -9,15 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav style="text-align: center;">
+    <nav>
         {% for i in range(len) %} 
             <a href="/article/{{ articles[i]['id'] }}">{{ articles[i]['title'] }}</a> <br>
         {% endfor %} 
     </nav>
-    <div style="color: red; margin: auto; max-width: 800px; border: 2px solid crimson; padding: 2px 6px; border-radius: 15px; text-align: center;">
-        <h1 style="margin: 10px 0 8px 0">{{ title }}</h1>
-        <h4 style="margin: 0;">{{ author }}</h4>
-        <p style="text-align: left;">{{ content }}</p>
-    </div>
+    <article>
+        <h1>{{ title }}</h1>
+        <h4>{{ author }}</h4>
+        <p>{{ content }}</p>
+    </article>
 </body>
 </html>

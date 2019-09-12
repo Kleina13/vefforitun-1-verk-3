@@ -25,6 +25,10 @@ def article(ID):
 			content = articles[x]['content']
 	return rend('layout.html', author=author, title=title, content=content, articles=articles, len=lenA)
 
+@app.errorhandler(404)
+def error404(error):
+	return '<br><br><h1 style="text-align: center;">ERROR 404</h1><h2 style="text-align: center;">page not found<h2>'
+
 
 if __name__ == "__main__":
 	app.run(debug=True)
